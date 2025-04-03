@@ -47,10 +47,10 @@ function ItemCard({itemTitle, itemDescription, itemKey, itemTime, isEditmode, on
         <div className='flex flex-col items-center justify-center gap-[1rem] mx-auto'>
             {
                 editmode
-                ?<ButtonComp type={'submit'} color={'green'} onClickFunction={handleSubmit} icon={faCheck}/>
-                :<ButtonComp type={'button'} color={'blue'} onClickFunction={handleEditItem} icon={faPen} />
+                ?<ButtonComp type={'submit'} color='green' onClickFunction={handleSubmit} icon={faCheck}/>
+                :<ButtonComp type={'button'} color='blue' onClickFunction={handleEditItem} icon={faPen} />
             }
-            <ButtonComp type={'button'} color={'red'} onClickFunction={handleDeleteItem} icon={faTrash}/>
+            <ButtonComp type={'button'} color='red' onClickFunction={handleDeleteItem} icon={faTrash}/>
         </div>
     </div>
   )
